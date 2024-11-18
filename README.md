@@ -8,7 +8,9 @@ https://code.visualstudio.com/download
 Create a Conda environment:
 
 conda create --name myenv python=3.9
+
 conda activate myenv
+
 configure vscode to conda env : Open Command Palette (Ctrl+Shift+P) and search for Preferences: Open Settings (JSON). Add this to the file:
 
 "python.condaPath": "C:/ProgramData/Anaconda3/Scripts/conda.exe"
@@ -17,21 +19,28 @@ configure vscode to conda env : Open Command Palette (Ctrl+Shift+P) and search f
 
 Clone the repository.
 Install the required dependencies:
+
 pip install -r requirements.txt
 
 
 3. Steps to setup the conda environment 
 
 conda create --name myenv python=3.9
+
 conda init and restart vscode
+
 conda activate myenv
+
 pip install -r requirements.txt
 
 
 
 4. For jupyter notebook, follow  these:
+
 pip install jupyter
+
 conda install ipykernel
+
 python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 
 Run Jupyter Noyebook from terminal by running the following command:
@@ -47,7 +56,9 @@ Open System Properties > Environment Variables.
 Under "System Variables," find the Path variable, and add the following if they're not already there:
  
 C:\Users\YourUsername\Anaconda3
+
 C:\Users\YourUsername\Anaconda3\Scripts
+
 C:\Users\YourUsername\Anaconda3\condabin
 
 
